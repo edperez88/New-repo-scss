@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue',cursive;
+  font-size: 16px;
+  background-image: url("images/reposeras-header-2.jpg");
+  background-size: cover;
+  padding: 10px 10px;
+}
+
+li {
+  font-size: 25px;
+  list-style: none;
+  display: inline;
+  padding: 3px 3px 3px 3px;
+  background-color: #d0e0f352;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(117, 164, 222, 0.562) 1px 1px;
+          box-shadow: rgba(117, 164, 222, 0.562) 1px 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+main div img {
+  height: 70%;
+  max-width: 150px;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: #9292f3;
+}
+
+main div h1 {
+  text-align: center;
+  background-color: coral;
+  border-radius: 5px;
+  -webkit-box-shadow: pink 1px 1px;
+          box-shadow: pink 1px 1px;
+}
+
+/*Formato principal de Pagina y Contenedores*/
+.container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container-2 li {
+  font-size: 40px;
+  background-color: #d0e0f352;
+}
+
+.container-3 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: rgba(0, 238, 255, 0.651);
+}
+
+/*..::Responsive::..*/
+@media screen and (max-width: 768px) {
+  .container-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    grid-gap: 5px;
+  }
+  .container-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
