@@ -79,8 +79,9 @@ h2
     display: flex;
     justify-content: center;
     align-items: center;
-
-    div{
+    img
+    {
+        
             justify-content: center;
             height: 300px;
             width: 300px;
@@ -88,17 +89,14 @@ h2
             margin: 10px;
             border-radius: 50px;
             border: 3px solid rgb(49, 219, 177);
-            img{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+    }
+    
 }
-
 .galeria-2
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     img
     {
         justify-content: center;
