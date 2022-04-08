@@ -275,11 +275,10 @@ h2
         flex-direction: column;
         justify-content: space-between;
     }
-    .container-2{
-        flex-direction: column;
-        padding: 10px 0 10px;
-        justify-content: space-between;
-        align-content: center;
+    .container-2
+    {
+        align-content: space-between;
+         
     }
     .container-map
     {
