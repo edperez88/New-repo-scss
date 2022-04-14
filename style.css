@@ -176,18 +176,14 @@ body {
   align-items: center;
 }
 
-.container-2 h3 {
+.container-2 a {
   height: 300px;
   width: 300px;
-  border: 3px solid black;
+  border: 3px solid rgba(0, 0, 0, 0.388);
   overflow: hidden;
-  justify-items: center;
   text-align: center;
   background-color: #8c93e5;
-}
-
-.container-2 h3 p {
-  color: rgba(255, 0, 221, 0.816);
+  font-size: 35px;
 }
 
 .container-footer {
