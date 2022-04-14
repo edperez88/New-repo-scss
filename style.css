@@ -1,39 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  background-image: url("images/reposeras-header-2.jpg");
-  background-color: rgba(65, 105, 225, 0.251);
-  background-size: cover;
-  padding: 10px 10px;
-}
-
-li {
-  list-style: none;
-  font-size: 16px;
-  display: inline;
-  padding: 3px 3px 3px 3px;
-  background-color: rgba(151, 216, 234, 0.897);
-  border-radius: 10px;
-  border-style: outset;
-}
-
-li :hover {
-  box-shadow: 3px 3px 5px 3px;
-  border-radius: 5px;
-}
-
-a {
-  text-decoration: none;
-}
-
 h2 {
   padding: 5px;
   background-color: rgba(255, 228, 196, 0.575);
@@ -80,6 +46,25 @@ h2 {
   100% {
     background-color: #fd71ff;
   }
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+  display: inline;
+  padding: 3px 3px 3px 3px;
+  background-color: rgba(151, 216, 234, 0.897);
+  border-radius: 10px;
+  border-style: outset;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li li :hover {
+  box-shadow: 3px 3px 5px 3px;
+  border-radius: 5px;
 }
 
 .galeria-1 {
@@ -138,12 +123,27 @@ h2 {
   padding: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-image: url("images/reposeras-header-2.jpg");
+  background-color: rgba(65, 105, 225, 0.251);
+  background-size: cover;
+  padding: 10px 10px;
+}
+
 /*Formato principal de Pagina y Contenedores*/
 .container-info {
   display: flex;
   height: 400px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -172,7 +172,7 @@ h2 {
   display: flex;
   height: 400px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -199,22 +199,27 @@ h2 {
 
 .container-map {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 500px;
   width: 100%;
 }
 
-.container-map .h4 {
+.container-map h2 {
   flex-direction: column;
-  height: 200px;
-  width: 50%;
   background-color: rgba(255, 232, 250, 0.945);
-  font-size: 40px;
   color: black solid;
+  font-size: 35px;
   text-align: center;
-  justify-content: baseline;
+  justify-content: center;
+}
+
+.container-map p {
+  color: black solid;
+  font-size: 25px;
+  text-decoration: underline;
+  background: bisque;
 }
 
 .form-1 {
@@ -262,11 +267,13 @@ h2 {
     justify-content: space-around;
     align-content: space-between;
   }
-  .container-map {
+  .container-map h2 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .container-map p {
     flex-direction: column;
-    padding: 10px 0 10px;
-    justify-content: space-between;
-    align-content: center;
+    align-items: center;
   }
   h4 {
     justify-items: center;
